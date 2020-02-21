@@ -1,5 +1,11 @@
 @import "core/settings";
-@import "components/page";
-@import "components/header";
-@import "components/links";
-@import "components/footer";
+// @import "components/page";
+// @import "components/header";
+// @import "components/links";
+// @import "components/footer";
+.hero-image {
+  height: 412px;
+  background: url(./assets/images/cover.jpg) 50% center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
