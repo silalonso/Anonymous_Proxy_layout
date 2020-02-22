@@ -34,7 +34,7 @@
 .header__title {
   border: 3px solid yellow;
   margin-bottom: 10px;
-  font-family: Roboto Slab-Bold;
+  font-family: Roboto Slab;
   font-size: 44px;
   line-height: 55px;
   text-transform: uppercase;
@@ -56,12 +56,13 @@
 }
 
 .header__scroll {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  padding: 0px 12px 0px 12px;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .looking {
