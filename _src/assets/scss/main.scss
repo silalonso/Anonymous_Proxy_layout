@@ -116,12 +116,28 @@
 
 .reasons {
   border: 3px solid blue;
-}
+  background-color: #eff9ff;
 
-.reasons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "title title title" "reasons1 reasons1 reasons1" "reasons2 reasons2 reasons2" "reasons3 reasons3 reasons3" ". more .";
+}
+
+.reasons__title {
+  grid-area: title;
+}
+.reasons__1 {
+  grid-area: reasons1;
+}
+.reasons__2 {
+  grid-area: reasons2;
+}
+.reasons__3 {
+  grid-area: reasons3;
+}
+.reasons__more {
+  grid-area: more;
 }
 
 .footerlinks1 {
