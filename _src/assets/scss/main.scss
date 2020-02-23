@@ -153,13 +153,32 @@
   justify-content: center;
   align-items: center;
   background-color: #304268;
-  color: white;
-  text-decoration: none;
+  // color: white;
+  // text-decoration: none;
 }
 .footerlinks1 {
+  display: flex;
   border: 3px solid cyan;
+  text-decoration: none;
+  // color: white;
+  text-transform: uppercase;
+
+  &__articles {
+    text-decoration: none;
+    color: white;
+  }
+  &__books {
+    text-decoration: none;
+    color: white;
+  }
+  &__events {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .footerlinks2 {
+  display: flex;
   border: 3px solid magenta;
+  text-decoration: none;
 }
