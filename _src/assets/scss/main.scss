@@ -117,29 +117,52 @@
 .reasons {
   border: 3px solid blue;
   background-color: #eff9ff;
+  padding-top: 30px;
+  padding-bottom: 60px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "title title title" "reasons1 reasons1 reasons1" "reasons2 reasons2 reasons2" "reasons3 reasons3 reasons3" ". more .";
+  row-gap: 45px;
+  justify-items: center;
+  align-items: center;
+
+  &__title {
+    grid-area: title;
+    text-transform: capitalize;
+  }
+
+  &__1 {
+    grid-area: reasons1;
+  }
+  &__2 {
+    grid-area: reasons2;
+  }
+  &__3 {
+    grid-area: reasons3;
+  }
+  &__more {
+    background-color: #f26002;
+    border-radius: 30%;
+    grid-area: more;
+
+    &__link {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
-.reasons__title {
-  grid-area: title;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #304268;
+  color: white;
+  text-decoration: none;
 }
-.reasons__1 {
-  grid-area: reasons1;
-}
-.reasons__2 {
-  grid-area: reasons2;
-}
-.reasons__3 {
-  grid-area: reasons3;
-}
-.reasons__more {
-  grid-area: more;
-}
-
 .footerlinks1 {
   border: 3px solid cyan;
 }
