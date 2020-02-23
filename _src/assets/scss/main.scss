@@ -1,5 +1,6 @@
 @import "core/settings";
 @import "core/reset";
+@import "core/variables";
 // @import "components/page";
 // @import "components/header";
 // @import "components/links";
@@ -11,10 +12,10 @@
   width: 100%;
 }
 
-.menuburguer {
+.menuburguer a {
   height: 44px;
   width: 44px;
-  padding: 13px 13px 13px 13px;
+  padding: 13px;
   box-sizing: border-box;
   background-color: #0271bc;
   display: block;
@@ -47,7 +48,7 @@
   &__text {
     border: 3px solid orange;
     margin-bottom: 45px;
-    font-family: Roboto-regular;
+    font-family: Roboto Regular;
     font-size: 16px;
   }
   &__scroll {
@@ -69,7 +70,7 @@
   margin: 30px 15px 45px 15px;
 
   &__smalltext {
-    font-family: roboto regular;
+    font-family: Roboto Regular;
     font-size: 14px;
     line-height: 30px;
     color: #8ccbea;
@@ -77,7 +78,8 @@
   }
 
   &__title {
-    font-family: roboto slab-bold;
+    font-family: Roboto Slab;
+    font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: black;
@@ -86,9 +88,9 @@
 
   &__text {
     font-family: roboto regular;
-    font-size: 18px;
+    font-size: $font-size-text;
     line-height: 30px;
-    color: #4a4a4a;
+    color: $primary-text-color;
   }
 
   &__gobutton {
@@ -96,21 +98,21 @@
     border-radius: 33%;
     width: 76px;
     height: 45px;
-    font-family: roboto medium;
+    font-family: Roboto Medium;
     font-size: 20px;
     line-height: 45px;
     display: flex;
     justify-content: center;
     &__link {
       text-decoration: none;
-      color: #f26002;
+      color: $primary-link-color;
     }
   }
 }
 
 .reasons {
   border: 3px solid blue;
-  background-color: #eff9ff;
+  background-color: $light-background-color;
   padding-top: 30px;
   padding-bottom: 60px;
   display: grid;
@@ -136,13 +138,20 @@
     grid-area: reasons3;
   }
   &__more {
-    background-color: #f26002;
-    border-radius: 30%;
     grid-area: more;
 
     &__link {
       color: white;
       text-decoration: none;
+      background-color: $primary-link-color;
+      padding: 5px 15px;
+      border-radius: 22.5px;
+      border: 1px solid $primary-link-color;
+      transition: all 0.2s ease-in;
+      &:hover {
+        background-color: white;
+        color: $primary-link-color;
+      }
     }
   }
 }
@@ -152,10 +161,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #304268;
+  background-color: $dark-background-color;
   // color: white;
   // text-decoration: none;
+  li {
+    list-style-type: none;
+  }
+
+  &__arrow {
+    margin-top: -24px;
+    margin-bottom: 37px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transition: all ease-out 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+  }
 }
+
 .footerlinks1 {
   display: flex;
   border: 3px solid cyan;
@@ -163,15 +193,7 @@
   // color: white;
   text-transform: uppercase;
 
-  &__articles {
-    text-decoration: none;
-    color: white;
-  }
-  &__books {
-    text-decoration: none;
-    color: white;
-  }
-  &__events {
+  a {
     text-decoration: none;
     color: white;
   }
@@ -181,4 +203,10 @@
   display: flex;
   border: 3px solid magenta;
   text-decoration: none;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
