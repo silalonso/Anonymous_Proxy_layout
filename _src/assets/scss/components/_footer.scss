@@ -1,17 +1,14 @@
-// .page__footer {
-// position: fixed;
-// left: 0;
-// bottom: 0;
-// width: 100vw;
-// padding: 1rem;
-// color: $color-secondary;
-// }
-
 .footer {
+  padding-bottom: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Roboto Regular;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+
   background-color: $dark-background-color;
   // color: white;
   // text-decoration: none;
@@ -35,29 +32,33 @@
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
     }
   }
-}
 
-.footerlinks1 {
-  display: flex;
-  border: 3px solid cyan;
-  text-decoration: none;
-  // color: white;
-  text-transform: uppercase;
-
-  a {
+  &__footerlinks1 {
+    border: 3px solid cyan;
     text-decoration: none;
-    color: white;
+    // color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
-}
 
-.footerlinks2 {
-  display: flex;
-  border: 3px solid magenta;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  a {
+  &__footerlinks2 {
+    border: 3px solid magenta;
     text-decoration: none;
-    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__smallandcopy {
+    border: 3px solid green;
+    text-align: center;
   }
 }

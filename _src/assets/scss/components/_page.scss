@@ -60,6 +60,9 @@
 .reasons {
   border: 3px solid blue;
   background-color: $light-background-color;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Roboto regular;
   padding-top: 30px;
   padding-bottom: 60px;
   display: grid;
@@ -90,8 +93,10 @@
     &__link {
       color: white;
       text-decoration: none;
+      font-size: 20px;
+      line-height: 45px;
       background-color: $primary-link-color;
-      padding: 5px 15px;
+      padding: 10px 15px;
       border-radius: 22.5px;
       border: 1px solid $primary-link-color;
       transition: all 0.2s ease-in;
