@@ -8,10 +8,7 @@
   font-size: 16px;
   line-height: 30px;
   color: white;
-
   background-color: $dark-background-color;
-  // color: white;
-  // text-decoration: none;
   li {
     list-style-type: none;
   }
@@ -39,6 +36,7 @@
     // color: white;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 
     a {
       text-decoration: none;
@@ -60,5 +58,33 @@
   &__smallandcopy {
     border: 3px solid green;
     text-align: center;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    // justify-content: center;
+    // align-items: center;
+    &__footerlinks1 {
+      text-align: start;
+    }
+    &__footerlinks2 {
+      text-align: start;
+    }
+    &__footerlinks3 {
+      text-align: start;
+    }
+    &__smallandcopy {
+      text-align: start;
+      order: -1;
+    }
+
+    &__3items {
+      width: 100%;
+      border: 3px solid black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }
