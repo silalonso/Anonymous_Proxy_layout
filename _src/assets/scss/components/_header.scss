@@ -1,5 +1,62 @@
-.page__header {
+// .page__header {
+// display: flex;
+// justify-content: space-evenly;
+// margin-bottom: 3rem;
+// }
+
+.hero-image {
+  height: 100vh;
+  background: url(../images/cover.jpg) 100% center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.menuburguer a {
+  height: 44px;
+  width: 44px;
+  padding: 13px;
+  box-sizing: border-box;
+  background-color: #0271bc;
+  display: block;
+  position: fixed;
+}
+
+.header {
+  height: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  border: 3px solid pink;
+  &__title {
+    border: 3px solid yellow;
+    margin-bottom: 10px;
+    font-family: Roboto Slab;
+    font-size: 44px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: 3px solid pink;
+  }
+  &__text {
+    border: 3px solid orange;
+    margin-bottom: 45px;
+    font-family: Roboto Regular;
+    font-size: 16px;
+  }
+  &__scroll {
+    margin-bottom: 53px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
 }
