@@ -31,9 +31,7 @@
   }
 
   &__footerlinks1 {
-    border: 3px solid cyan;
     text-decoration: none;
-    // color: white;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -45,7 +43,6 @@
   }
 
   &__footerlinks2 {
-    border: 3px solid magenta;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -55,16 +52,14 @@
       color: white;
     }
   }
+
   &__smallandcopy {
-    border: 3px solid green;
     text-align: center;
   }
 }
 
 @media all and (min-width: 768px) {
   .footer {
-    // justify-content: center;
-    // align-items: center;
     &__footerlinks1 {
       text-align: start;
     }
@@ -81,7 +76,6 @@
 
     &__3items {
       width: 100%;
-      border: 3px solid black;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
